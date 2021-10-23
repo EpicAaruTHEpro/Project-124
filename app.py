@@ -16,7 +16,7 @@ def add_task():
             {"status": "error", "message":"Please provide the data in .json format"}, 400
         )
     task = {
-        "id": tasks[-1]["id"]+1, 'title': request.json['title'],'name':request.json('name'), 'description': request.json.get('description', ""), "done": False
+        "id": tasks[-1]["id"]+1, 'title': request.json['title'],'name':request.json['name'], 'description': request.json.get('description', ""), "done": False
     }
 
     tasks.append(task)
